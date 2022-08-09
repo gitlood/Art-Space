@@ -1,13 +1,10 @@
 package com.example.artspace
 
-class MainActivityViewModel {
+class ImageDatabase {
     val allImages = setupImages()
-    fun loadImageAndDetails(image: Int): ImageAndDetails {
-        return allImages[image]
     }
-}
 
-fun setupImages(): List<ImageAndDetails> {
+private fun setupImages(): List<ImageAndDetails> {
     return listOf(
         ImageAndDetails(R.drawable.first, R.string.first_image),
         ImageAndDetails(R.drawable.second, R.string.second_image),
